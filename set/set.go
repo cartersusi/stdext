@@ -9,7 +9,7 @@ type Set[T comparable] struct {
 //
 // Returns:
 //   - a new set
-func NewSet[T comparable]() *Set[T] {
+func New[T comparable]() *Set[T] {
 	return &Set[T]{elements: make(map[T]struct{})}
 }
 
